@@ -1,0 +1,18 @@
+@"
+.vs/
+**/bin/
+**/obj/
+**/local.settings.json
+**/secrets.json
+__blobstorage__/
+__queuestorage__/
+__azurite_db_*.json
+"@ | Set-Content .gitignore
+AzuriteConfig
+# Configuracion local y publicacion de Azure
+**/Properties/PublishProfiles/
+**/Properties/serviceDependencies.local.json
+# Configuracion de despliegue de Azure
+PersonManagementFunction/Properties/ServiceDependencies/
+PersonManagementFunction/Properties/serviceDependencies*.json
+PersonManagementFunction/Properties/PublishProfiles/
